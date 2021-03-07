@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Погода</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <div class="weather">
+      <div class="weather__inner">
+        <div class="current">
+          <div class="current__city">--</div>
+          <div class="current__icon">--</div>
+          <div class="current__description">--</div>
+          <div class="current__temperature">--˚</div>
+          <div class="current__day"></div>
+          <div class="current__forecast">
+            <ul class="curr__forecast"></ul>
+          </div>
+        </div>
+
+        <div class="forecast">
+          <div class="item">
+            <div class="time">
+              <ul class="forecast__time"></ul>
+            </div>
+            <div class="icon">
+              <ul class="forecast__icon"></ul>
+            </div>
+            <div class="temperature">
+              <ul class="forecast__temperature"></ul>
+            </div>
+          </div>
+
+          <div class="details">
+            <div class="details__row">
+              <div class="details__item">
+                <div class="details__name">feels like:</div>
+                <div class="details__value feelslike">--˚</div>
+              </div>
+              <div class="details__item">
+                <div class="details__name">pressure:</div>
+                <div class="details__value pressure">-- ПА</div>
+              </div>
+            </div>
+            <div class="details__row">
+              <div class="details__item">
+                <div class="details__name">humidity:</div>
+                <div class="details__value humidity">-- %</div>
+              </div>
+              <div class="details__item">
+                <div class="details__name">wind:</div>
+                <div class="details__value wind">-- м/с</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="weather.js"></script>
+  </body>
+</html>
